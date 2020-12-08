@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<!-- gif를 포즈하는것을 불가능하지만 mp4로 변환하면 가능합니다.
+		mp4로 변환해서 하나하나 id를 주고 그에 대한 스크립트를 달아주세요.-->
+	<!-- video태그는 img태그랑 사용법은 같습니다 다만 /video로 닫아주어야합니다-->
+	<video src="giphy.mp4" autoplay loop muted id="video1"></video>
+	<video src="giphy2.mp4" autoplay loop muted id="video2"></video>
+	<script>
+		video1.onclick = function(e){if(e.target.paused){e.target.play();}else{e.target.pause();}}
+		video2.onclick = function(e){if(e.target.paused){e.target.play();}else{e.target.pause();}}
+	</script>
+</body>
+</html>
